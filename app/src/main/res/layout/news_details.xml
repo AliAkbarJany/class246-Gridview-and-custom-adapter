@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetails"
+    >
+    <RelativeLayout
+        android:id="@+id/myRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textTITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memorable 13 of the 13th World Cup"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:background="#5CFFEB3B"
+            />
+
+    </RelativeLayout>
+
+        <!--  Description =================  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myRelativeLayout"
+        android:padding="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textDESCRIPTION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The 13th edition of the ICC Men's ODI World Cup came to a close with Australia beating hosts India by five wickets in the final at the Narendra Modi Stadium in Ahmedabad yesterday. With the showpiece event in the rearview mirror, The Daily Star Sports looks at 13 moments that mesmerised the fans in the past 46 days.
+
+Kohli's 50th 100
+
+Undoubtedly, it was superstar Virat Kohli who provided the best moment when he surpassed his idol Sachin Tendulkar's record of 49 ODI tons in the semifinal against New Zealand in Mumbai. Tendulkar applauded from the stands as Kohli reached his 50th ODI ton in just his 277th innings. Kohli (765 runs in 11 matches) also became the first player to cross the 700-run mark in a single edition of the World Cup.
+
+Maxwell 201 not out
+
+To pull Australia out from the cusp of defeat at 91 for seven, Glenn Maxwell played one of the best innings the format has ever witnessed in Mumbai. Withstanding cramps and the scoreboard pressure, Maxwell smashed a 128-ball 201 as he singlehandedly saw the Aussies chase down the 291-run target.
+"
+                android:layout_gravity="left"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFAB40"
+        android:src="@drawable/voice_icon"
+
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
